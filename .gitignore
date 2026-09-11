@@ -1,0 +1,24 @@
+# temporary and deprecated things
+/tmp/
+/output/
+/notes/
+/archive/
+
+# tex auxiliary files
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+
+# macOS metadata
+.DS_Store
