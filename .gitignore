@@ -1,6 +1,10 @@
 # temporary and deprecated things
 /tmp/
 /output/
+/quant/tmp/
+/quant/output/
+/bioml/tmp/
+/bioml/output/
 /notes/
 /archive/
 
