@@ -1,6 +1,6 @@
 \RequirePackage{fix-cm}
 \documentclass[11pt,letterpaper]{article}
-\usepackage[hmargin=0.6in,top=0.4in,bottom=0.8in]{geometry}
+\usepackage[hmargin=0.5in,top=0.33in,bottom=0.5in]{geometry}
 \input{glyphtounicode}
 \pdfgentounicode=1
 \usepackage{microtype}
@@ -14,7 +14,7 @@
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-\setlength{\footskip}{30pt}
+\setlength{\footskip}{18pt}
 \fancyfoot[R]{\fontsize{10.5}{12}\selectfont v. 09/2026}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
@@ -40,61 +40,67 @@ GitHub: \href{https://github.com/cjoshliu}{\texttt{cjoshliu}}
 
 \section{EDUCATION}
 \entry{Stanford University}{Stanford, CA, USA}
-Biophysics PhD Program $\cdot$ \textbf{Thesis advisor:} Grant M. Rotskoff\hfill 09/2024 -- present\par
-% \textbf{Selected coursework:} CS 229 (Machine Learning), BIOE 300A (Molecular Bioengineering)\par
+Biophysics PhD Program $\cdot$ \textbf{Thesis advisor:} Grant M. Rotskoff $\cdot$ \textbf{GPA:} 4.0/4.0 \hfill 09/2024 -- present\par
+\textbf{Courses:} IMMUNOL201 Advanced Immunology, SBIO242 Molecular Biophysics Methods, CS229 Machine Learning\par
+
 \vspace{4pt}
 \entry{Massachusetts Institute of Technology (MIT)}{Cambridge, MA, USA}
 Bachelor of Science $\cdot$ \textbf{Major:} Physics $\cdot$ \textbf{GPA:} 4.9/5.0 $\cdot$ \textbf{MCAT:} 528/528\hfill 05/2022\par
+\textbf{Courses:} 18.650 Statistics, 8.591 Systems Biology $\cdot$ \textbf{Honors:} Joel Matthew Orloff Award, \href{https://news.mit.edu/2022/physics-gut-brain-health-chih-wei-joshua-liu-0603}{MIT News profile} \par
 \vspace{4pt}
 \entry{National Experimental High School}{Hsinchu, Taiwan, ROC}
-\textbf{SAT:} 1600/1600 $\cdot$ \textbf{ACT:} 36/36\hfill 05/2018
+\textbf{USABO:} Semifinalist (2015 -- 2018); High Honorist (2017) $\cdot$ \textbf{ACT:} 36/36 $\cdot$ \textbf{SAT:} 1600/1600\hfill 05/2018
 
 \section{EXPERIENCE}
-\entry{MIT Physics of Living Systems Group}{Research Assistant (06/2022 -- 08/2024)}
-\textbf{MIT Department of Physics} \hfill Teaching Assistant, 8.01 Physics I (09/2019 -- 12/2019)\par
-\hfill Teaching Assistant, 8.241 Introduction to Biological Physics (09/2023 -- 05/2024)\par
-\entry{Massachusetts General Hospital}{Data Analysis Intern (06/2021 -- 08/2021)}
-Analyzed patient statistics and authored two clinical publications.\par
+\entry{MIT Physics of Living Systems Group}{06/2022 -- 08/2024}\par
+\textit{Research Assistant}\hfill Cambridge, MA, USA\par
+Implemented microscopy experiments. Designed ensemble-learning and polyspectral analyses of biological images.\par
+\entry{MIT Department of Physics}{02/2024 -- 05/2024}
+\textit{Teaching Assistant, 8.241 Introduction to Biological Physics}\hfill Cambridge, MA, USA\par
+Led recitations on protein folding, diffusion, and imaging methods.
+Assisted optical-trap experiments.
+\par
+\entry{Massachusetts General Hospital}{06/2021 -- 08/2021}
+\textit{Data Science Intern}\hfill Boston, MA, USA\par
+Implemented GLS models of patient data and authored two clinical publications using \texttt{R}, \texttt{SPSS}, and \texttt{statsmodels}.\par
 
 \section{SELECTED PROJECTS}
 \publication{\textbf{C.-W.J. Liu}, J. Klinger, G.M. Rotskoff, \textbf{Optimal parameterization of nonequilibrium generalized master equations from discrete-time experimental data}, \href{https://doi.org/10.48550/arXiv.2606.28289}{arXiv:2606.28289}, in revision at \textit{Phys. Rev. X} (2026). \href{https://github.com/rotskoff-group/GMEx}{[\texttt{code}]}}
 \begin{itemize}
-\item Derived the first maximum-likelihood parameterization of non-Markovian kinetics satisfying all physical constraints in general biomolecules.
-Validated on experimental recordings of CFTR ion channels and F1 molecular motors.
-\item Set new state-of-the-art in benchmark extraction of HP35-Lys24Nle/Asn27His/Lys29Nle protein-folding kinetics from coarse-grained models trained on atomistic molecular-dynamics simulation.
+\item Derived the first maximum-likelihood parameterization of non-Markovian kinetics satisfying all physical constraints in general biomolecules. \textbf{Skills:} convex optimization, \texttt{lightning}
+\item Validated algorithm on CFTR ion-channel and F1 molecular-motor experiments. Set SOTA in benchmark extraction of HP35 protein-folding kinetics from molecular-dynamics simulations. \textbf{Skills:} autoregressive models, \texttt{mdtraj}
 \end{itemize}
 \projectsep
 \publication{J. Li$^*$, \textbf{C.-W.J. Liu}$^*$, M. Szurek, and N. Fakhri, \textbf{Measuring irreversibility from learned representations of biological patterns}, \href{https://doi.org/10.1103/PRXLife.2.033013}{\textit{PRX Life} \textbf{2}, 033013 (2024)}, $^*$equal contribution. \href{https://github.com/cjoshliu/irreversibility-from-representations}{[\texttt{code}]}}
 \begin{itemize}
-\item Quantified energetic costs of actomyosin regulation by Rho GTPase using only variational-autoencoder representations of cortical-wave microscopy videos.
+\item Quantified energetic costs of actomyosin regulation by conserved Rho GTPase using only variational-autoencoder representations of cortical-wave microscopy data.
+\textbf{Skills:} \texttt{pillow}, \texttt{torch}, \texttt{torchvision}
 \end{itemize}
 \projectsep
-\publication{A. Yona, \textbf{C.-W.J. Liu}, Z. Ben-Moshe, T.M. Nichols, G.A. Bodhankar, F.M. Key, C.V. Rao, T. Lieberman, D. Tullman-Ercek, and J. Gore, \textbf{Adaptive evolution identifies candidate genetic routes associated with oxalate utilization in probiotic and gut-derived \textit{E. coli}}, in revision at \textit{Cell Rep. Methods} (2026).}
+\publication{A. Yona, \textbf{C.-W.J. Liu}, et al., and J. Gore, \textbf{Adaptive evolution identifies candidate genetic routes associated with oxalate utilization in probiotic and gut-derived \textit{E. coli}}, in revision at \textit{Cell Rep. Methods} (2026).}
 \begin{itemize}
-\item Led biochemical characterization of human gut microbes subject to directed evolution for nephrotoxin degradation,
-identifying loci repeatedly mutated across lineages through whole-genome sequencing and imaging assays.
+\item Led biochemical characterization of human gut microbes subject to directed evolution,
+identifying loci repeatedly mutated across lineages with sequencing and imaging assays.
+\textbf{Skills:} metagenomics, anaerobic technique
 \end{itemize}
 \projectsep
-\publication{H. Lee$^*$, E. Koskelo$^*$, S. Gokhale$^*$, J. Li$^*$, C. Fei, \textbf{C.-W.J. Liu}, L. Lin, J. Dunkel, D.J. Skinner, and N. Fakhri, \textbf{Topological flowscape reveals state transitions in nonreciprocal living matter}, \href{https://doi.org/10.1103/tq6h-f5ws}{\textit{Phys. Rev. X} \textbf{16}, 031061 (2026)}, $^*$equal contribution.}
+\publication{H. Lee$^*$, E. Koskelo$^*$, S. Gokhale$^*$, J. Li$^*$, C. Fei, \textbf{C.-W.J. Liu}, L. Lin, J. Dunkel, D.J. Skinner, and N. Fakhri, \textbf{Topological flowscape reveals state transitions in nonreciprocal living matter}, \href{https://doi.org/10.1103/tq6h-f5ws}{\textit{Phys. Rev. X} \textbf{16}, 031061 (2026)}, $^*$equal contribution. Featured in \href{https://physics.aps.org/articles/v19/115}{\textit{Physics}} magazine and on the cover of \textit{Phys. Rev. X}.}
 \begin{itemize}
-\item Trained classifier of developmental stages in embryo videos, enabling identification of novel swarming dynamics in multicellular aggregates.
-Featured in \href{https://physics.aps.org/articles/v19/115}{\textit{Physics}} magazine and on the cover of \textit{Phys. Rev. X}.
+\item Trained classifier of developmental stages in embryo videos, enabling identification of physically exotic swarming dynamics in multicellular aggregates.
+\textbf{Skills:} \texttt{scikit-learn}, \texttt{scipy}, \texttt{numpy}, \texttt{pandas}, \texttt{opencv}
 \end{itemize}
 
-\section{LEADERSHIP AND HONORS}
+\section{GRANTS AND LEADERSHIP}
 \begingroup\setlength{\parskip}{1pt}
-\textbf{National Science Foundation Graduate Research Fellowship} (GRFP, 2024, Physics of Living Systems)\par
+\textbf{National Science Foundation Graduate Research Fellowship} (GRFP, 2024, Physics)\par
 \textbf{National Defense Science and Engineering Graduate Fellowship} (2024, Physics, declined for GRFP)\par
-\textbf{Joel Matthew Orloff Award} (MIT Department of Physics, 2022) $\cdot$ \textbf{MIT News:} \href{https://news.mit.edu/2022/physics-gut-brain-health-chih-wei-joshua-liu-0603}{profile (2022)}\par
-\textbf{USA Biology Olympiad:} High Honorist (2017); Semifinalist (2015--2018)\par
 \textbf{MIT Society of Physics Students and Sigma Pi Sigma:} honor-society inductee (2022); President (2022)\par
 \textbf{Phi Kappa Theta -- Massachusetts Eta:} Pledgemaster (2021); sourced and fundraised donation of 12,000 surgical masks to Beth Israel Deaconess Medical Center during pandemic shortage as Service Chair (2019--2020).
 \par\endgroup
 
 \section{SKILLS AND INTERESTS}
-\textbf{Computing:} \texttt{lightning}, \texttt{jax}, \texttt{pydantic}, \texttt{numpy}, \texttt{scipy}, \texttt{torch}, \texttt{scikit-learn}, \texttt{statsmodels}, \texttt{uv}, \texttt{ty}, \texttt{ruff}, \texttt{modal}\par
-\textbf{Laboratory:} cell culture, molecular cloning, light microscopy, NMR spectroscopy, anaerobic technique \par
-\textbf{Research interests:} nonequilibrium thermodynamics, biochemical kinetics, molecular motors, optimal transport\par
-\textbf{Personal interests:} phonology, historical linguistics, ichthyology $\cdot$ \textbf{Natural language:} Standard Chinese (native)
+\textbf{Biology:} cloning, enzyme assays, fluorescence microscopy $\cdot$ \textbf{Computing:} \texttt{jax}, \texttt{pydantic}, \texttt{uv}, \texttt{ty}, \texttt{ruff}, \texttt{slurm}\par
+\textbf{Natural language:} Standard Chinese (native) $\cdot$ \textbf{Personal interests:} phonology, archaeology, ichthyology, Set\par
+\textbf{Research interests:} nonequilibrium thermodynamics, biochemical kinetics, optimal transport, SAT solvers\par
 
 \end{document}
