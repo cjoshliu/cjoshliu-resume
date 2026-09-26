@@ -1,3 +1,3 @@
 .PHONY: all
 all:
-	$(MAKE) -C quant
+	$(MAKE) -C sciml
